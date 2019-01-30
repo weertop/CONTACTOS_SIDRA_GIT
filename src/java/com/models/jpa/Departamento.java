@@ -84,4 +84,10 @@ public class Departamento implements Serializable {
     public void setId(Integer id_departamento) {
         this.id_departamento = id_departamento;
     }
+
+	public String obtenerNombreEId(String nombre){
+		String union = "Tu nombre es: ";
+		return this.nombre+union;
+	}
+
 }
