@@ -30,6 +30,13 @@ public class Departamento implements Serializable {
     @OneToMany(mappedBy="Departamento")
     private List<Funcionario> funcionario=new ArrayList<Funcionario>();
     public Departamento(){}
+
+	public Departamento(int id_departamento, String estado){
+		this.id_departamento = id_departamento;
+		this.estado = estado;
+	}
+
+
     public Departamento(int id_departamento,String nombre){
         this.id_departamento=id_departamento;
         this.nombre=nombre;
