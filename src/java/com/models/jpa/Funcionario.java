@@ -37,6 +37,12 @@ public class Funcionario implements Serializable {
     private Departamento departamento;
     public Funcionario(){}
    
+	public Funcionario(int id_funcionario,String nombres){
+		this.id_funcionario=id_funcionario;
+		this.nombres=nombres;
+		System.out.println("hola mundo");
+	}
+
     public Funcionario(int id_funcionario,String nombres,String apepat,String telefono,String departamentoNombre,String establecimientoNombre,String estado){
         this.id_funcionario=id_funcionario;
         this.nombres=nombres;
