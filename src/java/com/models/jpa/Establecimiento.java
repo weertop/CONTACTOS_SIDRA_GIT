@@ -27,6 +27,12 @@ public class Establecimiento implements Serializable {
        this.nombre=nombre;
        this.estado=estado;
     }
+    
+    public Establecimiento(int id_establecimiento){
+       this.id_establecimiento=id_establecimiento;
+       System.out.println("hola mundo!");
+    }
+    
     public Integer getId_establecimiento() {
         return id_establecimiento;
     }
